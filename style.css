@@ -44,14 +44,13 @@ header{
 /* ==== style for body ==== */
 
 body {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(54, 53, 53);
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
 }
 /* ======= style for root ======= */
 #root {
   margin: 10px;
-  /* background-color: #ff4800; */
 }
 /* ==== style for main, main-2 id ==== */
 #main,
@@ -63,9 +62,6 @@ body {
 #main-head-container-2 {
   font-size: 30px;
   margin-top: 50px;
-  /* background-color: #4caf50; */
-  /* display: flex;
-    justify-content: space-between; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -87,7 +83,6 @@ body {
 #main-head-container-2 p {
   margin-left: 10%;
   color: #fff;
-  /* text-shadow: 2px 1px #a18d8d; */
   font-size: 40px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
@@ -115,15 +110,6 @@ body {
   flex-wrap: wrap;
   gap: 3px;
 }
-/* ==== style for h1 ==== */
-
-/* #main-head-container .btn,
-#main-head-container-2 .btn-2 {
-  width: auto;
-  height: auto;
-  border-radius: 5px;
-  font-size: 22px;  
-} */
 /* ==== style for btn text ======= */
 #add-btn-text,
 #add-btn-text-2 {
@@ -172,11 +158,6 @@ body {
   margin-top: 30px;
   text-align: center;
 }
-
-/* .card p {
-    margin-bottom: 20px;
-    text-align: center;  
-  } */
 
 .card ul {
   padding-top: 5px;
@@ -273,8 +254,8 @@ body {
 .popup2 h2,
 .popup3 h2 {
   margin-bottom: 10px;
-  color: #ff4800;
-  font-weight: 500;
+  color: #3D7C98;
+  font-weight: bolder;
 }
 
 .popup input,
@@ -289,6 +270,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   resize: none;
+  border: none;
 }
 
 .popup button,
@@ -306,15 +288,15 @@ body {
 .popup #add-card,
 .popup2 #add-item,
 .popup3 #add-sub-items {
-  background-color: red;
-  color: white;
+  background-color: #3D7C98;
+  color: whitesmoke;
 }
 
 .popup #cancel,
 .popup2 #cancel-item,
 .popup3 #cancel-sub-items {
-  background-color: #f44336;
-  color: white;
+  background-color: #3D7C98;
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
@@ -326,7 +308,6 @@ body {
   #main-head-container button,
   #main-head-container-2 button {
     position: relative;
-    /* margin-top: 50px; */
     margin: auto;
     margin-bottom: 50px;
   }
