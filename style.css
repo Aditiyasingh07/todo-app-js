@@ -1,38 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container{
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    color: whitesmoke;
-}
-header{
-    font-size: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.header1 .T{
-    font-weight: bolder;
-}
-.header1 .L{
-    font-weight: 100;
-}
-.header2{
-    display: flex;
-}
-.header1, .header2{
-    margin-top: 20px;
-}
-.header2 img{
-    width: 30px;
-    height: 35px;
-    margin-right: 10px;
-} */
-
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
@@ -47,6 +12,8 @@ body {
   background-color: rgb(54, 53, 53);
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 /* ======= style for root ======= */
 #root {
@@ -299,41 +266,63 @@ body {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 600px) {
-  .card {
-    width: 70%;
+/* Code for phone viwe */
+@media screen and (min-width: 480px) {
+  body{
+    background-color: #214656;
+    margin: 0;
+    padding: 0;
   }
-}
-@media only screen and (max-width: 480px) {
-  #main-head-container button,
-  #main-head-container-2 button {
-    position: relative;
+  #main{
+    padding: 0;
     margin: auto;
+    display: flex;
+    align-items: center;
+    row-gap: 200px;
+    flex-direction: column;
+  }
+  .add-card-btn{
+    display: flex;
+    background-color: #f5f5f5;
+    position: relative;
+    top: 70px;
+    left: 180px;
+  }
+  #heading span{
+    font-size: 5rem;
+  }
+  .add-card-btn span{
+    display: none;
+  }
+  .add-card-btn img{
+    height: 7rem;
+    width: 7rem;
+  }
+  .no-item{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .popup{
+    height: 300px;
+    width: 600px;
+  }
+  .popup h2{
+    font-size: 3rem;
+  }
+  .popup input{
+    width: 95%;
+    height: 50px;
+    font-size: 1.8rem;
     margin-bottom: 50px;
   }
-  .card {
-    width: 100%;
+  .popup button{
+    height: 70px;
+    width: 150px;
+    font-size: 1.6rem;
   }
-  .popup,
-  .popup3 {
-    width: 80%;
+  .card{
+    margin-top: 150px;
   }
-}
-.editing {
-  color: #065c09;
-}
-.deleting {
-  color: red;
-}
-.done {
-  background-color: #fff;
-  border: none;
-}
-.dones {
-  border: 1px solid grey;
-  color: #fff;
-  border-radius: 50%;
-}
-strong {
-  color: rgb(255, 252, 77);
 }
