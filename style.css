@@ -12,8 +12,6 @@ body {
   background-color: rgb(54, 53, 53);
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
-  height: 100vh;
-  width: 100vw;
 }
 /* ======= style for root ======= */
 #root {
@@ -264,65 +262,4 @@ body {
 .popup3 #cancel-sub-items {
   background-color: #3D7C98;
   color: whitesmoke;
-}
-
-/* Code for phone viwe */
-@media screen and (min-width: 480px) {
-  body{
-    background-color: #214656;
-    margin: 0;
-    padding: 0;
-  }
-  #main{
-    padding: 0;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    row-gap: 200px;
-    flex-direction: column;
-  }
-  .add-card-btn{
-    display: flex;
-    background-color: #f5f5f5;
-    position: relative;
-    top: 70px;
-    left: 180px;
-  }
-  #heading span{
-    font-size: 5rem;
-  }
-  .add-card-btn span{
-    display: none;
-  }
-  .add-card-btn img{
-    height: 7rem;
-    width: 7rem;
-  }
-  .no-item{
-    padding: 0;
-    margin: 0;
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.3);
-  }
-  .popup{
-    height: 300px;
-    width: 600px;
-  }
-  .popup h2{
-    font-size: 3rem;
-  }
-  .popup input{
-    width: 95%;
-    height: 50px;
-    font-size: 1.8rem;
-    margin-bottom: 50px;
-  }
-  .popup button{
-    height: 70px;
-    width: 150px;
-    font-size: 1.6rem;
-  }
-  .card{
-    margin-top: 150px;
-  }
 }
